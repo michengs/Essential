@@ -125,7 +125,7 @@ module.exports = function Essentials(mod) {
 			enabled = true 
 			}, 30000);			
 			enabled = false
-			mod.command.message(niceName + '<font color="#56B4E9">你用完了</font>' + missingns + missingbp + missingcb + '<font color="#56B4E9">. 请填充库存，稍后继续尝启动必需品 .</font>' )
+			mod.command.message(niceName + '<font color="#56B4E9">你用完了</font>' + missingns + missingbp + missingcb + '<font color="#56B4E9">. 请填充库存，30s后继续尝试启动必需品模组 .</font>' )
 			//return
 		}
 		if(!resetcount) resetcount = setTimeout(() => { counter = 0; resetcount = null }, 15000)
