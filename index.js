@@ -119,14 +119,25 @@ module.exports = function Essentials(mod) {
 			let missingns = (item == mod.settings.nostrum) ? '战斗秘药' : ''
 			let missingbp = (item == mod.settings.BP) ? '勇猛药水' : ''
 		    let missingcb = (item == mod.settings.ccb) ? '水晶防护卷' : ''		
-			setTimeout(start, 32000)		
+		//	setTimeout(start, 32000)	
+			setTimeout(() => {
+			if(mod.game.isIngame)	{
+            start()				
+			}		
+			}, 32000);		
+			
 			setTimeout(() => {
 			counter = 0
 			enabled = true 
-			}, 30000);			
+			}, 30000);		
+
+
+
+
+			
 			enabled = false
 			mod.command.message(niceName + '<font color="#56B4E9">你用完了</font>' + missingns + missingbp + missingcb + '<font color="#56B4E9">. 请填充库存，30s后继续尝试启动必需品模组 .</font>' )
-			//return
+			return
 		}
 		if(!resetcount) resetcount = setTimeout(() => { counter = 0; resetcount = null }, 15000)
 		mod.toServer('C_USE_ITEM', 3, {
