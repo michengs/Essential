@@ -6,7 +6,7 @@ const ITEMS_NOSTRUM = [152898, 184659, 201005, 201006, 201007, 201008, 201022, 8
 	BUFF_INVINCIBILITY = [1134, 6007], // Invincibility abnormalities on resurrection,
 	BUFF_BP = [4830] // Complete Crystalbind abnormalities
 
-module.exports = function Ess(mod) {
+module.exports = function Essentials(mod) {
 
 	mod.game.initialize(['me', 'me.abnormalities', 'contract']);
 
