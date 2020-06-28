@@ -11,8 +11,7 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://github.com/michengs/Ess/blob/master/"],
-    "supportUrl": "https://github.com/michengs/Ess/issues",
+    "servers": ["https://github.com/michengs/Essential/blob/master/"],
     "dependencies": {
         "tera-game-state": "https://raw.githubusercontent.com/caali-hackerman/tera-game-state/master/module.json"
     }
