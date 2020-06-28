@@ -1,0 +1,13 @@
+{
+    "files": {
+        "README.md": "925353bbe9f61647e7865bc7e79c77369aa9474004cb690d97f12687a15675b7",
+        "index.js": "5f58fbba33268288df0bcd839b6944eaa6b9976804a4c9f60c1adfee7ce9b69a",
+        "module.json": "1e7963e61391a5eab5c0a9bc1a4d85111324d9d423c83f48f4c546f66514ede0",
+        "settings_migrator.js": "93e04015c8a1625276e81d7fdc0de1795677f003bed2eecc14be11867a7ba544"
+    },
+    "defs": {
+        "C_USE_ITEM": 3,
+        "C_USE_PREMIUM_SLOT": 1,
+        "S_PREMIUM_SLOT_DATALIST": 2
+    }
+}

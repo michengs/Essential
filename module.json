@@ -1,0 +1,19 @@
+{
+    "disableAutoUpdate": false,
+    "name": "必需品",
+    "author": "mc/TeraProxy / Caali / Pinkie Pie",
+    "description": "A tera-proxy module that automatically uses Nostrum/Battle Solution and Complete Crystalbind items whenever needed.",
+    "version": "2.3.1",
+    "options": {
+        "niceName": "必需品",
+        "guiName": "必需品",
+        "settingsVersion": 6,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js"
+    },
+    "servers": ["https://github.com/michengs/Ess/blob/master/"],
+    "supportUrl": "https://github.com/michengs/Ess/issues",
+    "dependencies": {
+        "tera-game-state": "https://raw.githubusercontent.com/caali-hackerman/tera-game-state/master/module.json"
+    }
+}

@@ -6,7 +6,7 @@ const ITEMS_NOSTRUM = [152898, 184659, 201005, 201006, 201007, 201008, 201022, 8
 	BUFF_INVINCIBILITY = [1134, 6007], // Invincibility abnormalities on resurrection,
 	BUFF_BP = [4830] // Complete Crystalbind abnormalities
 
-module.exports = function Essentials(mod) {
+module.exports = function Ess(mod) {
 
 	mod.game.initialize(['me', 'me.abnormalities', 'contract']);
 
@@ -15,7 +15,7 @@ module.exports = function Essentials(mod) {
 		enabled = true,
 		counter = 0,
 		resetcount = null,
-		niceName = mod.proxyAuthor !== 'caali' ? '[Essentials] ' : ''
+		niceName = mod.proxyAuthor !== 'caali' ? '[必需品] ' : ''
 
 	// ############# //
 	// ### Hooks ### //
@@ -161,7 +161,7 @@ module.exports = function Essentials(mod) {
 	// ### Commands ### //
 	// ################ //
 
-	mod.command.add(['bxp'], (cmd) => {
+	mod.command.add(['ess'], (cmd) => {
 		if(cmd == null) {
 			enabled = !enabled
 			mod.command.message(niceName + '模组 ' + (enabled ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'))
